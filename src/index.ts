@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-// import { SheetService } from './sheet.service'
+import { SheetService } from './sheet.service';
 import { sampleMethod } from './util';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -28,6 +28,8 @@ declare let global: any;
 
 global.createNewFile = (): void => {
   Logger.log(sampleMethod(3, 3));
-  // const ss = SheetService.createInitialFile('New file')
-  // ss.getRange('A2').setValue('Happy gas!')
+  const ss = SheetService.createInitialFile('claspのテスト');
+  ss.getRange('A2').setValue(
+    'claspのテストclaspのテストclaspのテストclaspのテストclaspのテストclaspのテスト'
+  );
 };

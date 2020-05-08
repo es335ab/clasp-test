@@ -8,7 +8,8 @@
     "test": "jest",
     "build": "yarn run lint && yarn run test && rimraf dist && webpack && cpx src/appsscript.json dist && cpx \"src/**/*.html\" dist",
     "clasp:push": "yarn run build && clasp push",
-    "clasp:login": "clasp login"
+    "clasp:login": "clasp login",
+    "clasp:open": "clasp open"
   },
   "repository": {
     "type": "git",
